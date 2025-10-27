@@ -1,0 +1,16 @@
+version: '3'
+
+networks:
+  default:
+    external:
+      name: devnet
+
+services:
+  byfactory:
+    image: node:14
+    restart: always
+    container_name: byfactory
+    volumes:
+      - .:/usr/src/node-app
+    working_dir: /usr/src/node-app
+    command: npm start
