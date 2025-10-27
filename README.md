@@ -2,26 +2,6 @@
 - Node : `14.21.x`
 - NPM : `8.9.x`
 
-## Install
-
-```shell
-npm install
-```
-
-## Start
-
-- If you want run at local, copy `.env.sample` and rename to `.env`
-
-```shell
-npm start
-```
-
-## Build
-
-```shell
-npm run build
-```
-
 ## 작업범위
 ```
 components/DataTable, form, cardSlider, Token파트, button
