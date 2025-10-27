@@ -1,0 +1,165 @@
+:root {
+  --yellow-100: #ffd89f;
+  --yellow-200: #fef7d2;
+  --yellow-800: #ffb03f;
+  --primary: #03ab78;
+}
+
+.Pill {
+  align-items: center;
+  border: 1px solid;
+  border-radius: 42px;
+  display: inline-flex;
+  font-weight: 600;
+  justify-content: center;
+  padding: 0 8px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.Pill--default {
+  font-size: 12px;
+  height: 24px;
+  line-height: 18px;
+}
+
+.Pill--outline-gray {
+  background-color: transparent;
+  border-color: var(--black-600);
+  color: var(--black-600);
+}
+.Pill--light-yellow,
+.Pill--medium-yellow {
+  background-color: var(--yellow-200);
+  color: var(--yellow-800);
+}
+
+.Pill--biyard {
+  background-color: var(--biyard);
+}
+
+.StatusPill {
+  margin-right: 0.5rem;
+}
+
+.dg.List {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.dg.Link {
+  color: var(--primary);
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+}
+
+.dg.Link.Link--pointer {
+  cursor: pointer;
+  text-align: center !important;
+  width: auto !important;
+  font-weight: 500;
+  color: var(--biyard-light) !important;
+}
+
+.user-address {
+  font-weight: 500;
+  color: var(--biyard-light) !important;
+  display: flex;
+  justify-content: center;
+}
+
+.voting-footer {
+  margin-top: 0.7em;
+  text-align: center;
+}
+
+.voting-progress-dsec {
+  margin-bottom: 5px;
+}
+
+.voting-progress-status {
+  float: right !important;
+}
+
+.dg.Bold {
+  width: auto !important;
+}
+
+.ui.sub.header,
+.ui.huge.header {
+  color: white;
+}
+.DetailsSection__Flex.address.Link {
+  display: block;
+  text-align-last: right;
+}
+
+.votes-header {
+  display: contents;
+}
+
+.votes-label {
+  float: right;
+  color: var(--biyard) !important;
+  cursor: pointer;
+}
+
+.votes-label:hover {
+  color: var(--biyard-light) !important;
+}
+
+.voting-status {
+  background: var(--secondary);
+  /* opacity: 0.75; */
+
+  height: 70px;
+  margin-top: 24px;
+  padding: 8px 11px;
+}
+
+.voting-status-header {
+  color: white;
+  font-weight: 700;
+}
+
+.voting-status-value {
+  margin-top: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.voter-image {
+  margin-right: 20px;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 22.5px;
+}
+
+.snapshot-img {
+  width: 12px;
+  height: 12px;
+  margin-left: 0.5em;
+}

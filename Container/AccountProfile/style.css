@@ -1,0 +1,323 @@
+.redeem-code-input {
+  min-width: 80%;
+  border-color: var(--biyard) !important;
+  color: var(--biyard);
+  text-shadow: none !important;
+  background-color: transparent;
+  box-shadow: none !important;
+  display: inline-block;
+  min-height: 1em;
+  height: 36px;
+  font-weight: 700;
+  line-height: 1em;
+  font-size: 0.7em;
+  border-radius: 10px;
+  padding: 10;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.redeem-code-input.error {
+  border-color: var(--red) !important;
+  color: var(--red);
+}
+
+.ui.button:hover {
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 6%);
+  transform: translateY(0px);
+}
+
+:root {
+  --account-header-background: #03ab78;
+}
+
+.RedeemHeader {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)),
+    var(white);
+  min-height: 100px;
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.AccountHeader.ui.header.large {
+  background: rgba(255, 255, 255, 0.25);
+  min-height: 176px;
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.dcl.avatar-face.large {
+  width: 108px;
+  height: 108px;
+}
+
+.AccountHeader .profile-text {
+  color: #fff;
+  padding-left: 27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dcl.avatar-face .guest-face {
+  width: 100%;
+  height: 100%;
+  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4OCcgaGVpZ2h0PSc4OCc+PGcgZmlsbD0nI0NBQ0FDQScgZmlsbC1ydWxlPSdldmVub2RkJz48cGF0aCBkPSdNNzQuNDcgODYuNjE3bC01OS45ODIuMjgzQTMwLjYxIDMwLjYxIDAgMDExNCA4MS40NDJDMTQgNjQuNjMgMjcuNjM1IDUxIDQ0LjQ1NSA1MXMzMC40NTQgMTMuNjMgMzAuNDU0IDMwLjQ0MmMwIDEuNzY0LS4xNSAzLjQ5My0uNDM4IDUuMTc1eicvPjxlbGxpcHNlIGN4PSc0NC4xODYnIGN5PScyOC4xNzcnIHJ4PScyMS4xODYnIHJ5PScyMS4xNzcnLz48L2c+PC9zdmc+);
+  background-position: 50%;
+  background-size: contain;
+}
+.nft.profile {
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-size: contain;
+}
+
+.profile-Image {
+  width: 238px;
+  height: 182px;
+  background: #ececec;
+  border-radius: 12px;
+  object-fit: contain;
+  padding: 14px;
+}
+.ui.medium.circular.image {
+  margin: auto;
+  margin-left: 20px;
+  display: block;
+}
+.AccountHeader .profile-text .profile-name {
+  /* line-height: 48px; */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ui.button {
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: initial;
+  background: #e0e1e2 none;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Lato, helvetica neue, Arial, Helvetica, sans-serif;
+  margin: 0 0.25em 0 0;
+  padding: 0.78571429em 1.5em;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: 700;
+  line-height: 1em;
+  text-decoration: none;
+  border-radius: 0.28571429rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease,
+    box-shadow 0.1s ease, background 0.1s ease;
+  will-change: '';
+  -webkit-tap-highlight-color: transparent;
+}
+
+.AccountHeader .actions {
+  flex: 1 0 auto;
+  text-align: right;
+}
+
+.AccountHeader .ui.button.inverted.primary {
+  color: #fff;
+  border-color: #fff;
+}
+
+.AccountCardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.AccountCard.ui.card:first-child {
+  margin-right: 12px;
+}
+
+.AccountCard.ui.card:first-child,
+.AccountCard.ui.card:last-child {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.AccountCard.ui.card {
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  border-radius: 10px;
+}
+
+.ui.card > :first-child,
+.ui.cards > .card > :first-child {
+  border-radius: 0.28571429rem 0.28571429rem 0 0 !important;
+  border-top: none !important;
+}
+
+.AccountCardHeader {
+  padding: 22px;
+  border-bottom: 1px solid #ccc;
+}
+
+.AccountCardHeader .title {
+  font-size: 21px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+.AccountCardHeader .title-text-container {
+  display: flex;
+  font-weight: 500;
+}
+
+.AccountCardHeader .info-logo {
+  opacity: 0;
+  cursor: pointer;
+  margin: 3px;
+  width: 24px;
+  height: 24px;
+  background-image: url(https://cdn.decentraland.org/@dcl/account-site/3.0.2/static/media/info.51f06099.svg);
+}
+
+.AccountCardHeader .operation-menu {
+  font-size: 24px;
+  float: right;
+  margin-top: -35px;
+}
+
+.ui.card > :last-child,
+.ui.cards > .card > :last-child {
+  border-radius: 0 0 0.28571429rem 0.28571429rem !important;
+}
+
+.AccountTransactions {
+  position: relative;
+  min-height: 512px;
+}
+
+.AccountCardHeader .fundsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.AccountCardHeader .funds {
+  flex-grow: 1;
+}
+
+.AccountCardHeader .funds .amount {
+  display: flex;
+  justify-content: row;
+  align-items: flex-start;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.AccountCardHeader .funds .amount :first-child {
+  margin-right: 10px;
+}
+
+.mana-logo {
+  width: 24px;
+  height: 28px;
+  background-image: url(https://cdn.decentraland.org/@dcl/account-site/3.0.2/static/media/mana-red-logo.9a5f9e65.svg);
+}
+
+.AccountCardHeader .actions .ui.button {
+  padding: 0;
+  font-size: 13px;
+  height: 44px;
+  min-width: 96px;
+  border-radius: 8px;
+}
+
+.AccountTransactions .empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--secondary-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.AccountTransactions .empty .watermelon {
+  background-image: url(../../images/sss-logo.png);
+  background-position: 50%;
+  background-size: 64px;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px;
+}
+
+.secondary-text {
+  color: var(--secondary-text);
+}
+
+.sbt-card {
+  flex-grow: 1;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sbt-image {
+  height: 170px;
+  background-size: 140px;
+  background-position: center center;
+  background-size: contain;
+  margin: 8px;
+}
+
+.proposal.sbt-image {
+  background-image: url('https://images.sampletemplates.com/wp-content/uploads/2019/07/9-Grant-Proposal-Samples-PDF.jpg');
+}
+
+.vote.sbt-image {
+  background-image: url('https://images.sampletemplates.com/wp-content/uploads/2019/07/9-Grant-Proposal-Samples-PDF.jpg');
+}
+
+.fund.sbt-image {
+  background-image: url('https://images.sampletemplates.com/wp-content/uploads/2019/07/9-Grant-Proposal-Samples-PDF.jpg');
+}
+
+.sbt-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7em;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+.sbt-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: var(--biyard-header2);
+}
+
+.sbt-point {
+  margin-right: 1em;
+  font-weight: bold;
+}
