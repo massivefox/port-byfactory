@@ -1,0 +1,283 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--biyard-text);
+  text-align: left;
+  background-color: #fff;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: none;
+  min-height: 100vh;
+  letter-spacing: -0.005em;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--biyard-primary);
+  position: relative;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --neon-blue: #00d3ff;
+  --summer-red: #ff2d55;
+  --void: #16141a;
+  --luisxvi-violet: #a524b3;
+  --idontfeelthatwell: #f3f2f5;
+  --shadows: #242129;
+  --night-time: #691fa9;
+  --bluish-steel: #676370;
+  --innocence: #fff;
+  --candy-purple: #c640cd;
+  --sunish: #ffbc5b;
+  --millenial-orange: #fc9965;
+  --oj-not-simpson: #ff7439;
+
+  /* deprecated biyard colors */
+  --biyard: #03ab78;
+  --biyard-light: #00ffde;
+  --biyard-bg: rgb(0, 19, 33);
+  --biyard-dark: rgb(0, 26, 44);
+  --biyard-dark-light: rgb(8, 34, 53);
+
+  /* biyard colors */
+  --biyard-header: #fdfdfd;
+  --biyard-primary: #00aa56;
+  --biyard-secondary: #d9ffef;
+  --biyard-bg-primary: #ffffff;
+  --biyard-bg-secondary: #f7f7f9;
+  --biyard-header2: #202123;
+  --biyard-text: #636363;
+  --biyard-button: #00c564;
+
+  /* --dark: #18141a; */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.ui.toggle.checkbox {
+  min-height: 1.8rem !important;
+}
+
+/* Checkbox */
+.ui.toggle.checkbox .box:before,
+.ui.toggle.checkbox label:before {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  content: '';
+  top: 0 !important;
+  z-index: 1;
+  border: none;
+  background-color: #c5cdd2 !important;
+  width: 3.5rem;
+  height: 1.8em !important;
+  border-radius: 500rem;
+}
+
+/* Handle */
+.ui.toggle.checkbox .box:after,
+.ui.toggle.checkbox label:after {
+  background: #ffffff -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #ffffff linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  position: absolute;
+  content: '';
+  opacity: 1;
+  z-index: 2;
+  border: none;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05),
+    0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset;
+  width: 1.4rem;
+  height: 1.4rem;
+  top: 0.2rem !important;
+  left: 0.18rem !important;
+  border-radius: 500rem;
+}
+
+.ui.toggle.checkbox input[type='checkbox'] ~ .box:after,
+.ui.toggle.checkbox input[type='checkbox'] ~ label:after,
+.ui.toggle.checkbox input[type='radio'] ~ .box:after,
+.ui.toggle.checkbox input[type='radio'] ~ label:after {
+  left: 0.18rem;
+}
+
+/* Focus */
+.ui.toggle.checkbox input[type='checkbox']:focus ~ .box:before,
+.ui.toggle.checkbox input[type='checkbox']:focus ~ label:before,
+.ui.toggle.checkbox input[type='radio']:focus ~ .box:before,
+.ui.toggle.checkbox input[type='radio']:focus ~ label:before {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* Hover */
+.ui.toggle.checkbox .box:hover::before,
+.ui.toggle.checkbox label:hover::before {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* Active */
+.ui.toggle.checkbox input[type='checkbox']:checked ~ .box,
+.ui.toggle.checkbox input[type='checkbox']:checked ~ label,
+.ui.toggle.checkbox input[type='radio']:checked ~ .box,
+.ui.toggle.checkbox input[type='radio']:checked ~ label {
+  color: var(--biyard-button) !important;
+}
+
+.ui.toggle.checkbox input[type='checkbox']:checked ~ .box:before,
+.ui.toggle.checkbox input[type='checkbox']:checked ~ label:before,
+.ui.toggle.checkbox input[type='radio']:checked ~ .box:before,
+.ui.toggle.checkbox input[type='radio']:checked ~ label:before {
+  background-color: var(--biyard-button) !important;
+}
+
+.ui.toggle.checkbox input[type='checkbox']:checked ~ .box:after,
+.ui.toggle.checkbox input[type='checkbox']:checked ~ label:after,
+.ui.toggle.checkbox input[type='radio']:checked ~ .box:after,
+.ui.toggle.checkbox input[type='radio']:checked ~ label:after {
+  left: 1.8rem !important;
+}
+
+/* input range  TODO: browser test */
+
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 7px;
+  background: #ecedf4;
+  border-radius: 5px;
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 27px;
+  width: 27px;
+  border: 3px solid #00c564;
+  border-radius: 50%;
+  background: #d2ffe9;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  border: none;
+  border-radius: 3px;
+}
+
+put[type='range']:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+/* baseapp layout styles */
+.account-token-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 160px;
+  justify-content: end;
+  margin: 0 20px 0 10px;
+}
+
+.account-token-wrapper p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dao-info-wrapper {
+  color: var(--biyard-text) !important;
+  display: flex;
+  align-items: center;
+  max-width: 160px;
+  justify-content: end;
+  margin: 0 10px 0 40px;
+}
+
+.dao-info-wrapper p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dao-info-wrapper p:hover {
+  color: var(--biyard-primary);
+}
