@@ -1,0 +1,66 @@
+.TokenBalanceCard {
+  display: flex;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  align-content: stretch;
+  flex: 1;
+}
+
+.TokenBalanceCard .TokenBalanceCard__Header {
+  display: flex;
+  align-items: baseline;
+}
+
+.ui.sub.header.TokenBalanceCard__Symbol {
+  margin-right: 4px !important;
+  margin-bottom: 2px;
+  color: var(--secondary) !important;
+  font-size: 1rem;
+  font-weight: 400;
+
+  line-height: 18px;
+  text-transform: none;
+  text-transform: uppercase;
+
+  /* identical to box height */
+
+  letter-spacing: -0.03em;
+
+  color: #7a7c85;
+}
+
+.TokenBalanceCard .TokenBalanceCard_description > span {
+  color: var(--biyard-header2) !important;
+}
+
+.TokenBalanceCard .TokenBalanceCard_description {
+  display: flex;
+  flex-direction: column;
+  min-width: 128px;
+  justify-content: center;
+}
+
+.TokenBalanceCard .ui.header.sub {
+  margin-top: 0;
+  margin-right: 4px;
+  margin-left: 1rem;
+}
+
+.TokenBalanceCard span {
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+}
+
+/* FIXME: info 아이콘이나 특정 기능 추가되기 전까지 hover는 삭제 */
+.TokenBalanceCard:hover {
+  /* background: var(--biyard-dark-light);
+  cursor: pointer; */
+}

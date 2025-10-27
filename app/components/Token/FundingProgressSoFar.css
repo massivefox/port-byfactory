@@ -1,0 +1,50 @@
+.FundingProgressSoFar {
+  width: 100%;
+  display: flex;
+}
+
+.FundingProgressSoFar--Full {
+  max-height: 1500px;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  transition: max-height 0.8s;
+}
+
+.FundingProgressSoFar--Overview {
+  max-height: 398px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s;
+  -moz-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+}
+
+.content.FundingHeaders {
+  flex-grow: 0 !important;
+}
+
+.ui.header.huge.FundingProgressSoFar__Header {
+  margin-bottom: 8px;
+}
+.ui.medium.header.grantList__Total {
+  margin-bottom: 4px;
+}
+
+.ui.header.FundingProgressSoFar__Header,
+.ui.header.content.Funding__Header,
+.ui.header.huge.FundingProgressSoFar__Header {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  font-weight: 500;
+}
+
+.ui.sub.header.GrantList__Sub {
+  margin: 0 !important;
+}
+
+.stat-card-value {
+  color: #ffffff !important;
+}
+.stat-card-label {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
